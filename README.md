@@ -1,4 +1,3 @@
-
 # Exoplanet Explorer 
 
 This project analyzes NASA's confirmed exoplanet dataset to understand discovery trends and planetary characteristics. I built it while learning Pandas, NumPy, and Matplotlib in my CS course.
@@ -26,10 +25,9 @@ https://exoplanetarchive.ipac.caltech.edu/
 Download it as CSV and save it in the project folder as `Nasa_Exoplanet_archive.csv`.
 
 ## Running it
-```bash
+
 pip install pandas numpy matplotlib
 python main.py
-'''
 
-##Author
-Momina Ahmad
+## Author
+Momina Ahmad - EE Student, MCS NUST
