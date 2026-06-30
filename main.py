@@ -2,8 +2,8 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Load dataset
-df = pd.read_csv("Nasa_Exoplanet_archive.csv", low_memory=False)  # fixes the warning
+
+df = pd.read_csv("Nasa_Exoplanet_archive.csv", low_memory=False) 
 
 # Keep only useful columns
 cols = [
@@ -23,7 +23,7 @@ df = df[cols]
 print("Shape after selecting columns:", df.shape)
 print("\nMissing values:\n", df.isnull().sum())
 
-# Drop rows where critical columns are missing
+
 df = df.dropna(subset=['pl_name', 'disc_year', 'discoverymethod', 'pl_rade'])
 
 print("\nShape after cleaning:", df.shape)
@@ -61,7 +61,7 @@ wedges, texts, autotexts = plt.pie(
     labeldistance=1.15       # labels pushed outward
 )
 
-# Make labels bigger and bold so nothing overlaps
+
 for text in texts:
     text.set_fontsize(11)
 for autotext in autotexts:
