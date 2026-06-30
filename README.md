@@ -29,6 +29,7 @@ Download it as CSV and save it in the project folder as `Nasa_Exoplanet_archive.
 ```bash
 pip install pandas numpy matplotlib
 python main.py
+'''
 
 ##Author
 Momina Ahmad
